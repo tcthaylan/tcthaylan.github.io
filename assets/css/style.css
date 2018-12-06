@@ -1,0 +1,516 @@
+/*=============Geral=============*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+/*=============Layout=============*/
+/*Navbar*/
+.navbar {
+    box-shadow: 0px -3px 14px #000;
+}
+.bg-white {
+    background-color: #fff;
+}
+.logo {
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 54px;
+    text-indent: -999px;
+}
+.menu-item-active {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #88929e;
+    transition: color 0.5s;
+}
+.menu-item-active:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Banner*/
+.banner {
+    background-image: url(../images/wallpaper01.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+.banner > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.banner-texto h1 {
+    font-size: 39px;
+    font-weight: 600;
+    font-family: Raleway;
+    margin: 0;
+}
+.banner-texto p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: Raleway;
+}
+.traco-banner {
+    display: block;
+    height: 2px;
+    width: 59px;
+    background-color: #9492F5;
+    margin: 12px 0;
+}
+.botoes-banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px; 
+    text-align: center;
+}
+.botoes-banner > p {
+    color: #fff;
+    margin: 10px 0;
+    font-family: Raleway;
+}
+.botao-banner {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+.botao-banner:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+/*Sections*/
+.sobre, .conhecimento, .curso, .projeto, .contato {
+    padding: 90px 0;
+}
+.cabecalho-section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titulo-section {
+    color: #333;
+    font-size: 38px;
+    font-weight: 700;   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.traco-titulo {
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #88929e;
+    margin: 17px 0;
+}
+
+/*Sobre*/
+.container-img-sobre {
+    text-align: center;
+}
+.img-sobre {
+    width: 230px;
+    margin-bottom: 15px;
+    padding: 3px;
+    border: 1px solid #9c9c9c;
+}
+.nome-sobre, .sub-sobre {
+    text-align: center;
+}
+.nome-sobre {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 2px;   
+}
+.sub-sobre {
+    font-size: 17px;
+    color: rgb(158, 157, 157, 0.8);
+}
+.link-curriculo {
+    color: #000;
+    font-weight: 600;
+}
+.link-curriculo:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*Conhecimento*/
+.conhecimento {
+    background-color: #F6F6FE;
+}
+.texto-conhecimento {
+    margin-bottom: 19px;
+}
+.titulo-conhecimento {
+    font-weight: 600;
+    font-size: 39px;
+    color:#9492F5;
+}
+.traco-conhecimento {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #9492F5;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+.subtitulo-conhecimento {
+    color: #BEBDF9;
+    margin-bottom: 8px;
+}
+.item-conhecimento {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.icone-conhecimento {
+    margin-top: 4px;
+    margin-right: 12px;
+}
+.icone-conhecimento i {
+    font-size: 20px;
+    color: #9492F5;
+}
+.item-body-text h5 {
+    margin-bottom: 2px;
+    font-size: 22px;
+}
+
+
+/*Cursos*/
+.curso {
+    background-image: url(../images/section-cursos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.curso .titulo-section {
+    color: #fff;
+}
+.curso .traco-titulo {
+    background-color: #fff;
+}
+.card-curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px;
+}
+.card-curso-icone {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+    transition: all 1s;
+}
+.card-curso-icone:hover {
+    background-color: #9492F5;
+}
+.card-curso-icone > i {
+    margin-top: 25px;
+}
+.card-curso-texto h4 {
+    margin-bottom: 15px;
+}
+
+/*Projetos*/
+.container-card {
+    display: flex;
+    justify-content: center;
+}
+.projeto .card {
+    margin-bottom: 25px;
+    border-radius: 0;
+    max-width: 328px;
+    transition: all 0.8s;
+}
+.projeto .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.projeto .card-body {
+    position: relative;
+    padding-top: 3px;
+}
+.projeto .card-img-top {
+    height: 170px;
+}
+.git-circle {
+    position: absolute;
+    right: 15px;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    padding-top: 5px; 
+    background-color: #24292E;
+    text-align: center;
+    transition: all 1s;
+}
+.git-circle:hover {
+    background-color: rgb(54, 59, 65);
+}
+.git-circle > i {
+    color: #fff;
+}   
+.projeto .card-title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.projeto .card-text {
+    color: #88929e;
+    font-size: 14px;
+}
+.ultimo-update {
+    color: #88929e;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 9px;
+}
+.botao-visitar {
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 7px;
+    border: 1px rgba(0, 0, 0, 0.125) solid;
+}
+.botao-visitar:hover {
+    text-decoration: none;
+    color: #88929e;
+}
+
+/*Contato*/
+.contato {
+    background-color: #f6f6f6
+}
+.lista-endereco p{
+    margin-bottom: 8px;
+}
+.endereco-item {
+    display: flex;
+}
+.endereco-item i {
+    margin-top: 4px;
+    margin-right: 14px;
+}
+.endereco-item .endereco-item-2 {
+    margin-right: 16px;
+}
+.contato-img {
+    background-image: url(../images/contact.png);
+    background-repeat: no-repeat;
+    background-position: 203px 0;
+    background-size: contain;
+    margin-bottom: 40px;
+}
+.titulo-contato {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contato form .form-control {
+    border-radius: 25px;
+    padding: 25px 25px;
+}
+.contato form .form-control:focus {
+    border-color: rgba(132, 106, 221, 0.7) !important;
+    box-shadow: 0 0 8px 0 rgba(132, 106, 221, 0.5), 0 0 8px 0 rgba(132, 106, 221, 0.5);
+}
+.botao-contato {
+    display: block;
+    width: 100%;
+    background-color: #846add;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 25px;
+    transition: all 1s;
+}
+.botao-contato:hover {
+    background-color: #987df3;
+}
+
+
+/*Rodapé*/
+footer {
+    background-color: #262831;
+    padding: 10px 0;
+}
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+.redes-sociais li {
+    margin: 0 8px;
+}
+.rede-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #fff;
+}
+.rede-social-item i {
+    color: #000;
+}
+
+/*=============MEDIA QUERIES=============*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    /*Banner*/
+    .banner-texto h1 {
+        font-size: 59px;
+    }
+    .banner-texto p {
+        font-size: 23px;
+    }
+    .botoes-banner > p {
+        font-size: 17px;
+    }
+    .botao-banner {
+        font-size: 13px;
+        padding: 10px 50px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    /*Navbar*/
+    .menu-item-active:hover > span {
+        position: absolute;
+        left: 25%;
+        width: 50%;
+        top: 85%;
+        border: 1px solid #9492F5;
+    }
+
+    /*Banner*/
+    .banner-texto h1 {
+        font-size: 72px;
+    }
+    .banner-texto p {
+        font-size: 26px;
+    }
+    .botoes-banner {
+        display: flex;
+        flex-direction: row;
+        margin-top: 17px;
+    }
+    .botao-banner {
+        padding: 13px 60px;
+    }
+    .botoes-banner > p {
+        margin: 10px 20px;
+    }
+
+    /*Sections*/
+    .sobre, .conhecimento, .curso, .projeto, .contato {
+        padding: 110px 0;
+    }
+
+    /*Sobre*/
+    .nome-sobre, .sub-sobre {
+        text-align: left;
+    }
+    .img-sobre {
+        width: 220px;
+    }
+
+    /*Curso*/
+    .borda-card-curso {
+        border-right: 1px solid rgba(255, 255, 255, 0.7);
+        border-left: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    /*Contato*/
+    .contato-img {
+        background-position: -4px 160px;
+        background-size: inherit;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /*Banner*/
+    .banner-texto h1 {
+        font-size: 88px;
+    }
+    .banner-texto p {
+        font-size: 28px;
+    }
+    .botao-banner {
+        padding: 13px 60px;
+    }
+
+    /*Sections*/
+    .sobre, .conhecimento, .curso, .projeto, .contato {
+        padding: 115px 0;
+    }
+
+    /*Sobre*/
+    .img-sobre {
+        width: 245px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    /*Banner*/
+    .banner-texto h1 {
+        font-size: 104px;
+    }
+    .banner-texto p {
+        font-size: 32px;
+    }
+}
